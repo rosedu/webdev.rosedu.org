@@ -1,3 +1,3 @@
 deploy:
-    ssh webdev@projects.rosedu.org "cd public_html; git pull"
+	ssh webdev@projects.rosedu.org "cd public_html; git pull"
 
