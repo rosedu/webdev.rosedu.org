@@ -56,6 +56,7 @@ Zepto(function($) {
     "#webdev_logo":   "images/logos/webdev_logo.png",
     "#elo_logo":      "images/logos/elo_logo.png",
     "#eaudeweb_logo": "images/logos/eaudeweb_logo.png",
+    "#adobe_logo":    "images/logos/adobe_logo.png",
     "#arrow_hover":   "images/arrow-hover.png",
     "#grey_gradient": "images/grey-gradient.png"
   };
