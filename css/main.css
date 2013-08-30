@@ -205,11 +205,6 @@ table {
   background: rgba(200, 200, 200, 0.1);
 }
 
-.table tbody tr:hover td,
-.table tbody tr:hover th {
-  background-color: #f5f5f5;
-}
-
 .visualstate {
   display: none;
 }
@@ -231,5 +226,14 @@ table {
 
 .logotoppadding {
   padding-top: 22px;
+}
+
+.sponsor_logo_td {
+  padding: 15px;
+  vertical-align: top;
+}
+
+.sponsor_copy_td {
+  vertical-align: top;
 }
 
