@@ -1,7 +1,26 @@
+function update_both_schedules(data_as_text) {
+  data_set = JSON.parse(data_as_text);
+  for (var container_id in data_set) {
+    $("#" + container_id + "_description").text(data_set[container_id].course_description);
+    $("#" + container_id + "_date").text(data_set[container_id].course_date);
+  }
+}
+
 function navigate(visualstate) {
+  if (visualstate === "#frontend" || visualstate === "#backend") {
+    var ajax_options = {
+      type: "GET",
+      url: "/calendar.json?" + Math.round(new Date().getTime()),
+      dataType: "text",
+      success: update_both_schedules
+    };
+    $.ajax(ajax_options);
+  }
+
   $(".visualstate").hide();
   var css_selector_to_display = visualstate + "_content";
   $(css_selector_to_display).css({"display": "block", "opacity": 0}).animate({"opacity": 1}, 250);
+
   if ($("#menu").css("display") === "none") {
     $("#webdev_heading").hide();
     document.getElementById("top_of_content").scrollIntoView();
@@ -9,11 +28,13 @@ function navigate(visualstate) {
     $("#webdev_heading").show();
     document.body.scrollIntoView();
   }
+
   if (visualstate !== "#acasa" && $("#menu").css("display") === "none") {
     $("#tap_target_acasa").show();
   } else {
     $("#tap_target_acasa").hide();
   }
+
   var base_url = window.location.href.split("#")[0];
   history.pushState(css_selector_to_display, "/", base_url + visualstate);
 }
@@ -33,6 +54,7 @@ $(window).on("popstate", function(event) {
   if (typeof event.state === "string") {
     $(".visualstate").hide();
     $(event.state).css({"display": "block", "opacity": 0}).animate({"opacity": 1}, 250);
+
     if ($("#menu").css("display") === "none") {
       $("#webdev_heading").hide();
     } else {
