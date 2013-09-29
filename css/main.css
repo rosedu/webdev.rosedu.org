@@ -53,8 +53,6 @@ a {
     margin-top: 20px;
     margin-bottom: 10px;
     padding-top: 2px;
-    border-top: 1px solid white;
-    box-shadow: 0 -1px 0 #cccccc;
     text-transform: uppercase;
     letter-spacing: 3px; }
   .wrapper #menu_wrapper {
