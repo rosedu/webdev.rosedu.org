@@ -2,6 +2,7 @@ function update_both_schedules(data_as_text) {
   data_set = JSON.parse(data_as_text);
   for (var container_id in data_set) {
     $("#" + container_id + "_description").text(data_set[container_id].course_description);
+    $("#" + container_id + "_instructor").text(data_set[container_id].course_instructor);
     $("#" + container_id + "_date").text(data_set[container_id].course_date);
   }
 }
