@@ -84,9 +84,6 @@ $(window).on("popstate", function(event) {
 });
 
 Zepto(function($) {
-  window.ok_to_load_featured_event_logos = true;
-  window.ok_to_load_sponsor_logos = true;
-
   var visualstate = "#" + window.location.href.split("#")[1];
   if ( $(visualstate + "_content")[0] ) {
     navigate(visualstate);
@@ -97,7 +94,6 @@ Zepto(function($) {
   var all_images = {
     "#webdev_logo":     "images/logos/webdev_logo.png",
     "#elo_logo":        "images/logos/elo_logo.png",
-    "#grapefruit_logo": "images/logos/grapefruit_logo.png",
     "#eaudeweb_logo":   "images/logos/eaudeweb_logo.png",
     "#adobe_logo":      "images/logos/adobe_logo.png",
     "#arrow_hover":     "images/arrow-hover.png",
