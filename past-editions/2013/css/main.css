@@ -87,15 +87,15 @@ a {
               padding-top: 7px;
               padding-bottom: 7px; } }
           .wrapper #menu_wrapper ul li a:hover, .wrapper #menu_wrapper ul li a.highlight {
-            background-color: #5f5f5f;
-            background-image: url("../images/arrow-hover.png"), url("../images/gradient.png");
+            background-color: #69b373;
+            background-image: url("../images/arrow-hover.png"), url("../images/grey-gradient.png");
             background-repeat: no-repeat, repeat-x;
             background-position: right center, left bottom;
             color: white;
-            border-top-color: #5f5f5f; }
+            border-top-color: #69b373; }
           .wrapper #menu_wrapper ul li a:active {
-            background-color: #5f5f5f;
-            background-image: url("../images/arrow-hover.png"), url("../images/gradient.png");
+            background-color: #69b373;
+            background-image: url("../images/arrow-hover.png"), url("../images/grey-gradient.png");
             background-repeat: no-repeat, repeat-x;
             background-position: right center, left top; }
         .wrapper #menu_wrapper ul li:first-child a {
