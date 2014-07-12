@@ -192,6 +192,10 @@ table {
   border-top: 1px solid #dddddd;
 }
 
+.table td.alignright {
+  text-align: right;
+}
+
 .table th {
   font-family: 'OpenSansRegular', Arial, sans-serif;
 }
