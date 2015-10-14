@@ -3,6 +3,6 @@
 # - title: string
 #   content: text
 #
-- title: Box with a picture
-  content: Nullam ac rhoncus sapien, non gravida purus. Aliquam adipiscing eros non elit imperdiet congue. Integer ultricies.
+- title: Bine ați venit la WebDev
+  content: Anul acesta WebDev va fi diferit. Cursul va fi format din workshop-uri orientate pe tehnologii web.
   image: assets/images/creative_common/picture_box.jpeg
